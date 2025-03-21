@@ -1,0 +1,24 @@
+// fonts
+@import "./../fonts/style-font.css";
+
+// Base
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/mixins";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/mobile";
+@import "./blocks/logo";
+@import "./blocks/nav-list";
+@import "./blocks/sponsors";
+@import "./blocks/products-categorys";
+@import "./blocks/tab-controls";
+@import "./blocks/card-list";
+@import "./blocks/our-salon";
+@import "./blocks/blog";
+@import "./blocks/gallery";
+@import "./blocks/form";
+@import "./blocks/subscribe";
+@import "./blocks/footer";

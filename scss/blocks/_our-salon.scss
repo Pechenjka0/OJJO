@@ -1,0 +1,43 @@
+.our-salon {
+    padding: clamp(50px, 2.154rem + 4.85vw, 100px) 0;
+    color: $white-color;
+    
+    background-image: url(./../img/black-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-salon__content {
+    max-width: 730px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-salon__title {
+    margin-bottom: clamp(25px, 1.174rem + 1.94vw, 45px);
+}
+
+.our-salon__text {
+    font-size: clamp(12px, 0.633rem + 0.58vw, 18px);
+    line-height: 1.4;
+    text-align: center;
+
+    margin-bottom: clamp(30px, 1.292rem + 2.91vw, 60px);
+}
+
+.our-salon__btn {
+    @include btn($white-color, $accent-color, $accent-color, 18px, 500, 15px, 35px,);
+    display: inline-block;
+
+    a {
+        color: inherit;
+    }
+
+    &:hover {
+        color: $white-color;
+        background-color: transparent;
+    }
+}

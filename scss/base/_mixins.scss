@@ -1,0 +1,45 @@
+@mixin btn($bg-color, $bd-color, $color, $fz, $fw, $p-y, $p-x) {
+    background-color: $bg-color;
+    border: 1px solid $bd-color;
+    color: $color;
+    font-size: $fz;
+    font-weight: $fw;
+    padding: $p-y $p-x;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color .2s ease-in, background-color .2s ease-in, border .2s ease-in;
+    cursor: pointer;
+    text-align: center;
+}
+
+@mixin tablet-laptop() {
+    @media (min-width: 855px) and (max-width: 1139px) {
+        @content;
+    }
+}
+
+@mixin laptop() {
+    @media (max-width: 1150px) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: 880px) {
+        @content;
+    }
+}
+
+@mixin tablet-medium() {
+    @media (max-width: 699px) {
+        @content;
+    }
+}
+
+@mixin mobile-large() {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
+

@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:700);
+
+body {
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: 400;
+    color: $white-color;
+
+    background-color: $body-color;
+}
+
+// Прибиваем Footer к низу страницы
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+// /Прибиваем Footer к низу страницы
+
+button:focus-visible {
+    border: 2px solid black;
+}
+
+a:focus-visible {
+    border: 2px solid white;
+}
+
+a:active {
+    color: inherit;
+}
+
+input:focus-visible {
+    border: 2px solid black;
+}
+
+.none {
+    display: none !important;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: $font-title;
+    font-size: clamp(20px, 0.573rem + 1.51vw, 30px);
+    font-weight: 700;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.hints {
+    font-family: $font-main;
+    font-size: clamp(16px, 0.906rem + 0.47vw, 21px);
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 15px;
+    text-wrap: balance;
+}
+
+.title-underline {
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+
+        background: $accent-color;
+    }
+}

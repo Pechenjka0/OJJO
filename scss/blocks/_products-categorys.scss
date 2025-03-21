@@ -1,0 +1,23 @@
+.products-categorys {
+    padding: clamp(30px, 0.554rem + 6.6vw, 100px) 0 clamp(15px, -1.044rem + 9.91vw, 120px);
+}
+
+.products-categorys__content {
+
+}
+
+.products-categorys__title {
+    color: $accent-color;
+
+    h2 {
+        margin-bottom: clamp(30px, 1.309rem + 2.83vw, 60px);
+    }
+}
+
+.products-categorys__tabs {
+    margin-bottom: 55px;
+}
+
+.products-categorys__card {
+
+}

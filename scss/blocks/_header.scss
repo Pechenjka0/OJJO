@@ -1,0 +1,140 @@
+.header {
+    position: relative;
+    background-image: url(./../img/header/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $white-color;
+
+    padding-top: 25px;
+
+    a {
+        color: $white-color;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+        background: rgba(51, 51, 51, 0.87);
+    }
+}
+
+.header__top-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+    a {
+        transition: color .2s ease-in;
+
+        &:hover {
+            color: #ffffff60;
+        }
+    }
+
+    @include laptop() {
+        justify-content: space-between;
+    }
+}
+
+.header__nav {
+    margin-right: 126px;
+
+    @include laptop() {
+        display: none;
+    }
+}
+
+.header__right {
+    @include laptop() {
+        display: none;
+    }
+}
+
+.header__right-content {
+    display: flex;
+    gap: 40px;
+
+    margin-left: 99px;
+}
+
+.header__search-content {
+    display: flex;
+    gap: 13px;
+}
+
+.header__personal {
+    display: inline-flex;
+}
+
+.header__account-content {
+    display: flex;
+    gap: 25px;
+}
+
+.header__account-user {
+    width: 16px;
+    height: 16px;
+}
+
+.header__account-like {
+    width: 16px;
+    height: 16px;
+}
+
+.header__middle {
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: clamp(250px, 10.474rem + 25.75vw, 523px);
+}
+
+.header__middle-content {
+    text-align: center;
+}
+
+.header__middle-title {
+    font-family: $font-title;
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 45px;
+}
+
+.header__middle-btn {
+    @include btn( $accent-color, $white-color, $white-color, 18px, 500, 10px, 35px);
+    
+    display: inline-block;
+
+    margin-bottom: 80px;
+
+    &:hover {
+        background-color: $body-color;
+        color: $accent-color;
+    }
+}
+
+.header__bottom {
+    position: relative;
+    z-index: 10;
+
+    @include laptop() {
+        display: none;
+    }
+}
+
+.header__bottom-content {
+    display: flex;
+}
